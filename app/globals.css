@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+:root {
+  --background: #020617;
+  --foreground: #f8fafc;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global background */
+body {
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(6, 182, 212, 0.15),
+      transparent 40%
+    ),
+    #020617;
+
+  color: #f8fafc;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+/* Text selection */
+::selection {
+  background: #06b6d4;
+  color: white;
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(255, 255, 255, 0.10);
+
+  border-radius: 1rem;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(34, 211, 238, 0.4);
+
+  box-shadow:
+    0 0 30px rgba(34, 211, 238, 0.15);
+}
+
+/* Primary Button */
+.cyber-button {
+  background:
+    linear-gradient(
+      90deg,
+      #06b6d4,
+      #2563eb
+    );
+
+  color: white;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.cyber-button:hover {
+  transform: scale(1.03);
+  opacity: 0.95;
+}
+
+/* Secondary Button */
+.cyber-button-outline {
+  border: 1px solid rgba(34, 211, 238, 0.5);
+
+  color: #22d3ee;
+
+  transition: all 0.3s ease;
+}
+
+.cyber-button-outline:hover {
+  background: rgba(34, 211, 238, 0.08);
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Muted Text */
+.text-muted {
+  color: #94a3b8;
+}
+
+/* Cyber Glow */
+.cyber-glow {
+  box-shadow:
+    0 0 20px rgba(34, 211, 238, 0.15),
+    0 0 50px rgba(34, 211, 238, 0.08);
+}
+
+/* Conference Highlight */
+.conference-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.conference-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: -50px;
+  right: -50px;
+
+  width: 200px;
+  height: 200px;
+
+  background: rgba(6, 182, 212, 0.12);
+
+  border-radius: 9999px;
+
+  filter: blur(70px);
+}
+
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0ea5e9;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+}
