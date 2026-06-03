@@ -1,26 +1,34 @@
 import type { Metadata } from "next";
-import { Cairo } from "next/font/google";
+import { Orbitron, Inter } from "next/font/google";
 import "./globals.css";
 
-const cairo = Cairo({
-subsets: ["arabic", "latin"],
+const orbitron = Orbitron({
+  subsets: ["latin"],
+  variable: "--font-orbitron",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
-title: "CyberSudan",
-description: "من أجل سودان رقمي آمن",
+  title: "CyberSudan",
+  description: "Cyber Security Awareness Platform",
 };
 
 export default function RootLayout({
-children,
+  children,
 }: Readonly<{
-children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-return (
-<html lang="ar" dir="rtl">
-<body className={"${cairo.className} bg-slate-950 text-white"}>
-{children}
-</body>
-</html>
-);
+  return (
+    <html lang="en">
+      <body
+        className={`${orbitron.variable} ${inter.variable} bg-[#0B0F1A] text-white`}
+      >
+        {children}
+      </body>
+    </html>
+  );
 }

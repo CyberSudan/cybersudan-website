@@ -159,3 +159,36 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #06b6d4;
 }
+:root {
+  --cyber-blue: #00d4ff;
+}
+
+body {
+  background: #0b0f1a;
+  color: white;
+  font-family: var(--font-inter);
+}
+
+.cyber-title {
+  font-family: var(--font-orbitron);
+}
+
+.cyber-glow {
+  text-shadow:
+    0 0 5px #00d4ff,
+    0 0 10px #00d4ff,
+    0 0 20px #00d4ff;
+}
+
+.cyber-card {
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(0,212,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,212,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}

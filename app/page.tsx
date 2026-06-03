@@ -1,229 +1,257 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-
 export default function Home() {
-return (
-<main className="min-h-screen bg-slate-950 text-white">
+  return (
+    <main className="relative min-h-screen overflow-hidden bg-[#0B0F1A] text-white">
 
-  <Navbar />
+      {/* Cyber Background */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#112240,transparent_60%)]" />
+      <div className="absolute inset-0 opacity-5 bg-[linear-gradient(to_right,#00d4ff_1px,transparent_1px),linear-gradient(to_bottom,#00d4ff_1px,transparent_1px)] bg-[size:40px_40px]" />
 
-  {/* Hero Section */}
-  <section className="max-w-7xl mx-auto px-6 py-24 text-center">
+      {/* Navbar */}
+      <header className="relative z-10 flex items-center justify-between px-8 py-5 border-b border-cyan-500/10 backdrop-blur-sm">
+        <div>
+          <h1 className="text-2xl font-bold text-cyan-400 tracking-wide">
+            CyberSudan
+          </h1>
+          <p className="text-xs text-gray-500">
+            Securing Sudan's Digital Future
+          </p>
+        </div>
 
-    <div className="inline-block px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm mb-6">
-      CyberSudan Initiative
-    </div>
+        <nav className="hidden md:flex gap-8 text-gray-300">
+          <a href="/" className="hover:text-cyan-400 transition">Home</a>
+          <a href="/alerts" className="hover:text-cyan-400 transition">Alerts</a>
+          <a href="/news" className="hover:text-cyan-400 transition">News</a>
+          <a href="/resources" className="hover:text-cyan-400 transition">Resources</a>
+          <a href="/team" className="hover:text-cyan-400 transition">Team</a>
+          <a href="/about" className="hover:text-cyan-400 transition">About</a>
+        </nav>
 
-    <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-      من أجل <span className="text-cyan-400">سودان رقمي آمن</span>
-    </h1>
+        <a
+          href="/join"
+          className="px-5 py-2 rounded-lg bg-cyan-500 text-black font-semibold hover:bg-cyan-400 transition"
+        >
+          Join Us
+        </a>
+      </header>
 
-    <p className="max-w-3xl mx-auto text-slate-400 text-lg md:text-xl">
-      منصة مجتمعية تهدف إلى نشر الوعي بالأمن السيبراني وتمكين الشباب
-      السوداني بالمعرفة والمهارات اللازمة لحماية المجتمع الرقمي.
-    </p>
+      {/* Hero */}
+      <section className="relative z-10 px-8 py-24">
 
-    <div className="flex flex-col md:flex-row justify-center gap-4 mt-10">
-      <a
-        href="/join"
-        className="bg-cyan-600 hover:bg-cyan-700 transition px-8 py-4 rounded-xl"
-      >
-        انضم إلى المبادرة
-      </a>
+        <div className="flex flex-wrap justify-center gap-6 text-xs text-gray-400 mb-10">
+          <span>🟢 System Secure</span>
+          <span>⚡ Threat Level: Low</span>
+          <span>🔍 Monitoring Active</span>
+          <span>🌐 Global Visibility</span>
+        </div>
 
-      <a
-        href="/resources"
-        className="border border-cyan-600 hover:bg-cyan-600/10 transition px-8 py-4 rounded-xl"
-      >
-        ابدأ التعلم
-      </a>
-    </div>
+        <div className="max-w-5xl mx-auto text-center">
 
-  </section>
+          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
+            Building a Safer
+            <br />
+            <span className="text-cyan-400">
+              Digital Sudan
+            </span>
+          </h1>
 
-  {/* Statistics */}
-  <section className="max-w-7xl mx-auto px-6 py-12">
+          <p className="mt-8 text-gray-400 text-lg max-w-3xl mx-auto">
+            CyberSudan is a cybersecurity awareness platform focused on
+            cyber threats, digital safety, security education, incident
+            awareness, and building a stronger cybersecurity community.
+          </p>
 
-    <div className="grid md:grid-cols-4 gap-6">
+          <div className="flex flex-wrap justify-center gap-4 mt-10">
+            <a
+              href="/alerts"
+              className="px-7 py-3 rounded-lg bg-cyan-500 text-black font-semibold hover:bg-cyan-400 transition"
+            >
+              Explore Dashboard
+            </a>
 
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center">
-        <h2 className="text-4xl font-bold text-cyan-400">100+</h2>
-        <p className="text-slate-400 mt-2">متدرب</p>
-      </div>
+            <a
+              href="/resources"
+              className="px-7 py-3 rounded-lg border border-cyan-500 hover:bg-cyan-500/10 transition"
+            >
+              Learning Hub
+            </a>
+          </div>
 
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center">
-        <h2 className="text-4xl font-bold text-cyan-400">20+</h2>
-        <p className="text-slate-400 mt-2">فعالية</p>
-      </div>
+        </div>
+      </section>
 
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center">
-        <h2 className="text-4xl font-bold text-cyan-400">50+</h2>
-        <p className="text-slate-400 mt-2">مورد تعليمي</p>
-      </div>
+      {/* Statistics */}
+      <section className="relative z-10 px-8 pb-16">
+        <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
 
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center">
-        <h2 className="text-4xl font-bold text-cyan-400">30+</h2>
-        <p className="text-slate-400 mt-2">متطوع</p>
-      </div>
+          <div className="bg-white/5 backdrop-blur-md border border-green-500/20 rounded-xl p-6">
+            <h3 className="text-green-400 font-semibold">
+              System Status
+            </h3>
+            <p className="text-3xl font-bold mt-3">
+              Secure
+            </p>
+          </div>
 
-    </div>
+          <div className="bg-white/5 backdrop-blur-md border border-red-500/20 rounded-xl p-6">
+            <h3 className="text-red-400 font-semibold">
+              Threat Level
+            </h3>
+            <p className="text-3xl font-bold mt-3">
+              Low
+            </p>
+          </div>
 
-  </section>
+          <div className="bg-white/5 backdrop-blur-md border border-cyan-500/20 rounded-xl p-6">
+            <h3 className="text-cyan-400 font-semibold">
+              Alerts Today
+            </h3>
+            <p className="text-3xl font-bold mt-3">
+              07
+            </p>
+          </div>
 
-  {/* Vision & Mission */}
-  <section className="max-w-7xl mx-auto px-6 py-20">
+          <div className="bg-white/5 backdrop-blur-md border border-yellow-500/20 rounded-xl p-6">
+            <h3 className="text-yellow-400 font-semibold">
+              Monitoring
+            </h3>
+            <p className="text-3xl font-bold mt-3">
+              Active
+            </p>
+          </div>
 
-    <div className="grid md:grid-cols-2 gap-8">
+        </div>
+      </section>
 
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-8">
-        <h2 className="text-2xl font-bold text-cyan-400 mb-4">الرؤية</h2>
-        <p className="text-slate-400 leading-8">
-          بناء مجتمع سوداني واعٍ رقمياً وقادر على مواجهة التهديدات السيبرانية.
-        </p>
-      </div>
+      {/* Live Dashboard */}
+      <section className="relative z-10 px-8 pb-20">
+        <div className="max-w-6xl mx-auto">
 
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-8">
-        <h2 className="text-2xl font-bold text-cyan-400 mb-4">الرسالة</h2>
-        <p className="text-slate-400 leading-8">
-          نشر ثقافة الأمن السيبراني وتمكين الشباب السوداني عبر التعليم والتدريب.
-        </p>
-      </div>
+          <h2 className="text-3xl font-bold text-cyan-400 mb-8">
+            Live Security Dashboard
+          </h2>
 
-    </div>
+          <div className="grid md:grid-cols-4 gap-6">
 
-  </section>
+            <div className="bg-white/5 border border-cyan-500/20 rounded-xl p-6">
+              <p className="text-gray-400 text-sm">Threats Blocked</p>
+              <h3 className="text-4xl font-bold text-cyan-400 mt-2">
+                12,847
+              </h3>
+            </div>
 
-  {/* Why CyberSudan */}
-  <section className="max-w-7xl mx-auto px-6 py-20">
+            <div className="bg-white/5 border border-red-500/20 rounded-xl p-6">
+              <p className="text-gray-400 text-sm">Active Alerts</p>
+              <h3 className="text-4xl font-bold text-red-400 mt-2">
+                7
+              </h3>
+            </div>
 
-    <h2 className="text-4xl font-bold text-center mb-12">
-      لماذا CyberSudan الآن؟
-    </h2>
+            <div className="bg-white/5 border border-green-500/20 rounded-xl p-6">
+              <p className="text-gray-400 text-sm">Protected Systems</p>
+              <h3 className="text-4xl font-bold text-green-400 mt-2">
+                99.8%
+              </h3>
+            </div>
 
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white/5 border border-yellow-500/20 rounded-xl p-6">
+              <p className="text-gray-400 text-sm">Monitoring Status</p>
+              <h3 className="text-4xl font-bold text-yellow-400 mt-2">
+                Online
+              </h3>
+            </div>
 
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
-        <h3 className="font-bold text-cyan-400 mb-3">التحول الرقمي</h3>
-        <p className="text-slate-400">
-          الحاجة المتزايدة إلى بيئة رقمية أكثر أمناً.
-        </p>
-      </div>
+          </div>
+        </div>
+      </section>
 
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
-        <h3 className="font-bold text-cyan-400 mb-3">تمكين الشباب</h3>
-        <p className="text-slate-400">
-          إعداد جيل قادر على مواجهة التحديات السيبرانية.
-        </p>
-      </div>
+      {/* Threat Map Section */}
+      <section className="relative z-10 px-8 pb-20">
+        <div className="max-w-6xl mx-auto">
 
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
-        <h3 className="font-bold text-cyan-400 mb-3">بناء المجتمع</h3>
-        <p className="text-slate-400">
-          ربط الطلاب والباحثين والمتخصصين في منصة واحدة.
-        </p>
-      </div>
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-md">
 
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
-        <h3 className="font-bold text-cyan-400 mb-3">المستقبل الرقمي</h3>
-        <p className="text-slate-400">
-          دعم بناء سودان رقمي أكثر وعياً وأماناً.
-        </p>
-      </div>
+            <div className="flex justify-between items-center mb-6">
+              <h2 className="text-2xl font-bold text-cyan-400">
+                Global Threat Intelligence
+              </h2>
 
-    </div>
+              <span className="text-xs text-green-400">
+                ● Live Monitoring
+              </span>
+            </div>
 
-  </section>
+            <div className="h-96 rounded-xl border border-cyan-500/10 bg-gradient-to-br from-cyan-950/20 to-slate-900 flex items-center justify-center">
 
-  {/* Learning Paths */}
-  <section className="max-w-7xl mx-auto px-6 py-20">
+              <div className="text-center">
+                <p className="text-7xl mb-4">🌍</p>
 
-    <h2 className="text-4xl font-bold text-center mb-12">
-      المسارات التعليمية
-    </h2>
+                <h3 className="text-xl font-semibold text-cyan-400">
+                  Global Threat Map
+                </h3>
 
-    <div className="grid md:grid-cols-3 gap-6">
+                <p className="text-gray-500 mt-2">
+                  Ready for future integration with threat intelligence APIs
+                </p>
+              </div>
 
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">Cybersecurity Fundamentals</div>
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">Networking Basics</div>
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">Linux Fundamentals</div>
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">Web Security</div>
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">Digital Forensics</div>
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">Threat Intelligence</div>
+            </div>
 
-    </div>
+          </div>
 
-  </section>
+        </div>
+      </section>
 
-  {/* First Conference */}
-  <section className="max-w-7xl mx-auto px-6 py-20">
+      {/* Features */}
+      <section className="relative z-10 px-8 pb-24">
 
-    <div className="bg-slate-900 border border-cyan-500/30 rounded-2xl p-8">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-cyan-400 mb-8">
+            Platform Services
+          </h2>
 
-      <h2 className="text-4xl font-bold text-cyan-400 mb-6">
-        🇸🇩 أول مؤتمر لأمن المعلومات في السودان
-      </h2>
+          <div className="grid md:grid-cols-4 gap-6">
 
-      <p className="text-slate-300 leading-8 mb-6">
-        تعمل CyberSudan — بإذن الله — على تنظيم أول مؤتمر متخصص
-        في أمن المعلومات والأمن السيبراني في السودان.
-      </p>
+            <div className="p-6 rounded-xl bg-red-500/5 border border-red-500/20 hover:border-red-500 transition">
+              <h3 className="text-red-400 font-semibold mb-3">
+                Threat Alerts
+              </h3>
+              <p className="text-gray-400 text-sm">
+                Real-time alerts and vulnerability awareness.
+              </p>
+            </div>
 
-      <p className="text-slate-400 leading-8 mb-6">
-        سيجمع المؤتمر المختصين والطلاب والباحثين والمهتمين بالتقنية
-        لمناقشة التحديات والفرص وبناء مجتمع تقني أكثر قوة.
-      </p>
+            <div className="p-6 rounded-xl bg-blue-500/5 border border-blue-500/20 hover:border-blue-500 transition">
+              <h3 className="text-blue-400 font-semibold mb-3">
+                Cyber News
+              </h3>
+              <p className="text-gray-400 text-sm">
+                Latest cybersecurity news and incidents.
+              </p>
+            </div>
 
-      <div className="inline-block px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400">
-        الحالة: قريباً
-      </div>
+            <div className="p-6 rounded-xl bg-green-500/5 border border-green-500/20 hover:border-green-500 transition">
+              <h3 className="text-green-400 font-semibold mb-3">
+                Learning Hub
+              </h3>
+              <p className="text-gray-400 text-sm">
+                Courses, tutorials and cybersecurity resources.
+              </p>
+            </div>
 
-    </div>
+            <div className="p-6 rounded-xl bg-purple-500/5 border border-purple-500/20 hover:border-purple-500 transition">
+              <h3 className="text-purple-400 font-semibold mb-3">
+                Cyber Tools
+              </h3>
+              <p className="text-gray-400 text-sm">
+                Security tools and analyst resources.
+              </p>
+            </div>
 
-  </section>
+          </div>
+        </div>
 
-  {/* Roadmap */}
-  <section className="max-w-7xl mx-auto px-6 py-20">
+      </section>
 
-    <h2 className="text-4xl font-bold text-center mb-12">
-      خارطة الطريق
-    </h2>
-
-    <div className="grid md:grid-cols-3 gap-6">
-
-      <div className="bg-slate-900 rounded-xl p-6">✓ إطلاق المنصة</div>
-      <div className="bg-slate-900 rounded-xl p-6">✓ بناء مجتمع المتطوعين</div>
-      <div className="bg-slate-900 rounded-xl p-6">⏳ البرامج التدريبية</div>
-      <div className="bg-slate-900 rounded-xl p-6">⏳ المؤتمر الوطني</div>
-      <div className="bg-slate-900 rounded-xl p-6">⏳ مسابقات CTF</div>
-      <div className="bg-slate-900 rounded-xl p-6">⏳ مركز CyberSudan</div>
-
-    </div>
-
-  </section>
-
-  {/* CTA */}
-  <section className="max-w-5xl mx-auto px-6 py-24 text-center">
-
-    <h2 className="text-4xl font-bold mb-6">
-      كن جزءاً من CyberSudan
-    </h2>
-
-    <p className="text-slate-400 mb-8">
-      ساهم في بناء مجتمع رقمي أكثر أمناً في السودان.
-    </p>
-
-    <a
-      href="/join"
-      className="bg-cyan-600 hover:bg-cyan-700 transition px-10 py-4 rounded-xl"
-    >
-      انضم الآن
-    </a>
-
-  </section>
-
-  <Footer />
-
-</main>
-
-);
+    </main>
+  );
 }
