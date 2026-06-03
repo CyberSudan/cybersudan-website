@@ -1,0 +1,42 @@
+{
+  "home": "Home",
+  "alerts": "Alerts",
+  "news": "News",
+  "resources": "Resources",
+  "about": "About",
+  "join": "Join Us",
+
+  "heroTitle1": "Building a Safer",
+  "heroTitle2": "Digital Sudan",
+
+  "heroDescription": "CyberSudan is a cybersecurity awareness platform focused on cyber threats, digital safety, security education, incident awareness, and building a stronger cybersecurity community.",
+
+  "dashboard": "Explore Dashboard",
+  "learning": "Learning Hub",
+
+  "systemStatus": "System Status",
+  "secure": "Secure",
+  "threatLevel": "Threat Level",
+  "low": "Low",
+  "alertsToday": "Alerts Today",
+  "monitoring": "Monitoring",
+  "active": "Active",
+
+  "liveDashboard": "Live Security Dashboard",
+  "threatsBlocked": "Threats Blocked",
+  "activeAlerts": "Active Alerts",
+  "protectedSystems": "Protected Systems",
+  "monitoringStatus": "Monitoring Status",
+  "online": "Online",
+
+  "globalThreat": "Global Threat Intelligence",
+  "liveMonitoring": "Live Monitoring",
+  "globalMap": "Global Threat Map",
+  "integrationReady": "Threat Intelligence Integration Ready",
+
+  "services": "Platform Services",
+  "threatAlerts": "Threat Alerts",
+  "cyberNews": "Cyber News",
+  "learningHub": "Learning Hub",
+  "cyberTools": "Cyber Tools"
+}

@@ -1,0 +1,42 @@
+{
+  "home": "الرئيسية",
+  "alerts": "التنبيهات",
+  "news": "الأخبار",
+  "resources": "الموارد",
+  "about": "من نحن",
+  "join": "انضم إلينا",
+
+  "heroTitle1": "بناء",
+  "heroTitle2": "سودان رقمي أكثر أماناً",
+
+  "heroDescription": "سايبرسودان منصة توعوية متخصصة في الأمن السيبراني، تهدف إلى رفع الوعي بالمخاطر الرقمية وتعزيز الأمن الرقمي في السودان.",
+
+  "dashboard": "لوحة التحكم",
+  "learning": "مركز التعلم",
+
+  "systemStatus": "حالة النظام",
+  "secure": "آمن",
+  "threatLevel": "مستوى التهديد",
+  "low": "منخفض",
+  "alertsToday": "تنبيهات اليوم",
+  "monitoring": "المراقبة",
+  "active": "نشطة",
+
+  "liveDashboard": "لوحة الأمن المباشرة",
+  "threatsBlocked": "الهجمات المحجوبة",
+  "activeAlerts": "التنبيهات النشطة",
+  "protectedSystems": "الأنظمة المحمية",
+  "monitoringStatus": "حالة المراقبة",
+  "online": "متصل",
+
+  "globalThreat": "استخبارات التهديدات العالمية",
+  "liveMonitoring": "مراقبة مباشرة",
+  "globalMap": "خريطة التهديدات العالمية",
+  "integrationReady": "جاهزة للربط مع مصادر التهديدات",
+
+  "services": "خدمات المنصة",
+  "threatAlerts": "تنبيهات التهديدات",
+  "cyberNews": "أخبار الأمن السيبراني",
+  "learningHub": "مركز التعلم",
+  "cyberTools": "الأدوات السيبرانية"
+}
